@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		55768A33238E09CA0031F837 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55768A32238E09CA0031F837 /* AppDelegate.m */; };
-		55768A36238E09CA0031F837 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55768A35238E09CA0031F837 /* SceneDelegate.m */; };
 		55768A39238E09CA0031F837 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55768A38238E09CA0031F837 /* ViewController.m */; };
 		55768A3C238E09CA0031F837 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55768A3A238E09CA0031F837 /* Main.storyboard */; };
 		55768A3E238E09CB0031F837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55768A3D238E09CB0031F837 /* Assets.xcassets */; };
@@ -16,6 +15,19 @@
 		55768A44238E09CB0031F837 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55768A43238E09CB0031F837 /* main.m */; };
 		55768A4E238E09CB0031F837 /* HZSSiriDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55768A4D238E09CB0031F837 /* HZSSiriDemoTests.m */; };
 		55768A59238E09CB0031F837 /* HZSSiriDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55768A58238E09CB0031F837 /* HZSSiriDemoUITests.m */; };
+		55768A68238E12F90031F837 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 55768A67238E12F90031F837 /* Intents.intentdefinition */; };
+		55768A71238E23210031F837 /* IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 55768A70238E23210031F837 /* IntentHandler.m */; };
+		55768A7A238E23220031F837 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55768A79238E23220031F837 /* IntentsUI.framework */; };
+		55768A7E238E23220031F837 /* IntentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55768A7D238E23220031F837 /* IntentViewController.m */; };
+		55768A81238E23220031F837 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55768A7F238E23220031F837 /* MainInterface.storyboard */; };
+		55768A85238E23220031F837 /* HZSSiriIntentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 55768A77238E23220031F837 /* HZSSiriIntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		55768A88238E23220031F837 /* HZSSiriIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 55768A6D238E23210031F837 /* HZSSiriIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		55768A93238E24E30031F837 /* IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 55768A70238E23210031F837 /* IntentHandler.m */; };
+		55768A95238E24E30031F837 /* IntentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55768A7D238E23220031F837 /* IntentViewController.m */; };
+		55768A98238E253E0031F837 /* GoHomeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 55768A97238E253E0031F837 /* GoHomeHandler.m */; };
+		55768A99238E25470031F837 /* GoHomeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 55768A97238E253E0031F837 /* GoHomeHandler.m */; };
+		55768A9A238E26E80031F837 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 55768A67238E12F90031F837 /* Intents.intentdefinition */; };
+		55768A9B238E26ED0031F837 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 55768A67238E12F90031F837 /* Intents.intentdefinition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,14 +45,41 @@
 			remoteGlobalIDString = 55768A2D238E09CA0031F837;
 			remoteInfo = HZSSiriDemo;
 		};
+		55768A83238E23220031F837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55768A26238E09CA0031F837 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55768A76238E23220031F837;
+			remoteInfo = HZSSiriIntentsUI;
+		};
+		55768A86238E23220031F837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55768A26238E09CA0031F837 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55768A6C238E23210031F837;
+			remoteInfo = HZSSiriIntents;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55768A8F238E23220031F837 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				55768A85238E23220031F837 /* HZSSiriIntentsUI.appex in Embed App Extensions */,
+				55768A88238E23220031F837 /* HZSSiriIntents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		55768A2E238E09CA0031F837 /* HZSSiriDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HZSSiriDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55768A31238E09CA0031F837 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		55768A32238E09CA0031F837 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		55768A34238E09CA0031F837 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		55768A35238E09CA0031F837 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		55768A37238E09CA0031F837 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		55768A38238E09CA0031F837 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		55768A3B238E09CA0031F837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +93,20 @@
 		55768A54238E09CB0031F837 /* HZSSiriDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HZSSiriDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55768A58238E09CB0031F837 /* HZSSiriDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZSSiriDemoUITests.m; sourceTree = "<group>"; };
 		55768A5A238E09CB0031F837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55768A66238E0A790031F837 /* HZSSiriDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HZSSiriDemo.entitlements; sourceTree = "<group>"; };
+		55768A67238E12F90031F837 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		55768A6D238E23210031F837 /* HZSSiriIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HZSSiriIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		55768A6F238E23210031F837 /* IntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentHandler.h; sourceTree = "<group>"; };
+		55768A70238E23210031F837 /* IntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentHandler.m; sourceTree = "<group>"; };
+		55768A72238E23220031F837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55768A77238E23220031F837 /* HZSSiriIntentsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HZSSiriIntentsUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		55768A79238E23220031F837 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		55768A7C238E23220031F837 /* IntentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentViewController.h; sourceTree = "<group>"; };
+		55768A7D238E23220031F837 /* IntentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentViewController.m; sourceTree = "<group>"; };
+		55768A80238E23220031F837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		55768A82238E23220031F837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55768A96238E253E0031F837 /* GoHomeHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoHomeHandler.h; sourceTree = "<group>"; };
+		55768A97238E253E0031F837 /* GoHomeHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoHomeHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +131,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55768A6A238E23210031F837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55768A74238E23220031F837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55768A7A238E23220031F837 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,6 +155,9 @@
 				55768A30238E09CA0031F837 /* HZSSiriDemo */,
 				55768A4C238E09CB0031F837 /* HZSSiriDemoTests */,
 				55768A57238E09CB0031F837 /* HZSSiriDemoUITests */,
+				55768A6E238E23210031F837 /* HZSSiriIntents */,
+				55768A7B238E23220031F837 /* HZSSiriIntentsUI */,
+				55768A78238E23220031F837 /* Frameworks */,
 				55768A2F238E09CA0031F837 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +168,8 @@
 				55768A2E238E09CA0031F837 /* HZSSiriDemo.app */,
 				55768A49238E09CB0031F837 /* HZSSiriDemoTests.xctest */,
 				55768A54238E09CB0031F837 /* HZSSiriDemoUITests.xctest */,
+				55768A6D238E23210031F837 /* HZSSiriIntents.appex */,
+				55768A77238E23220031F837 /* HZSSiriIntentsUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,10 +177,9 @@
 		55768A30238E09CA0031F837 /* HZSSiriDemo */ = {
 			isa = PBXGroup;
 			children = (
+				55768A66238E0A790031F837 /* HZSSiriDemo.entitlements */,
 				55768A31238E09CA0031F837 /* AppDelegate.h */,
 				55768A32238E09CA0031F837 /* AppDelegate.m */,
-				55768A34238E09CA0031F837 /* SceneDelegate.h */,
-				55768A35238E09CA0031F837 /* SceneDelegate.m */,
 				55768A37238E09CA0031F837 /* ViewController.h */,
 				55768A38238E09CA0031F837 /* ViewController.m */,
 				55768A3A238E09CA0031F837 /* Main.storyboard */,
@@ -115,6 +187,7 @@
 				55768A3F238E09CB0031F837 /* LaunchScreen.storyboard */,
 				55768A42238E09CB0031F837 /* Info.plist */,
 				55768A43238E09CB0031F837 /* main.m */,
+				55768A67238E12F90031F837 /* Intents.intentdefinition */,
 			);
 			path = HZSSiriDemo;
 			sourceTree = "<group>";
@@ -137,6 +210,37 @@
 			path = HZSSiriDemoUITests;
 			sourceTree = "<group>";
 		};
+		55768A6E238E23210031F837 /* HZSSiriIntents */ = {
+			isa = PBXGroup;
+			children = (
+				55768A6F238E23210031F837 /* IntentHandler.h */,
+				55768A70238E23210031F837 /* IntentHandler.m */,
+				55768A72238E23220031F837 /* Info.plist */,
+				55768A96238E253E0031F837 /* GoHomeHandler.h */,
+				55768A97238E253E0031F837 /* GoHomeHandler.m */,
+			);
+			path = HZSSiriIntents;
+			sourceTree = "<group>";
+		};
+		55768A78238E23220031F837 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55768A79238E23220031F837 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55768A7B238E23220031F837 /* HZSSiriIntentsUI */ = {
+			isa = PBXGroup;
+			children = (
+				55768A7C238E23220031F837 /* IntentViewController.h */,
+				55768A7D238E23220031F837 /* IntentViewController.m */,
+				55768A7F238E23220031F837 /* MainInterface.storyboard */,
+				55768A82238E23220031F837 /* Info.plist */,
+			);
+			path = HZSSiriIntentsUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,10 +251,13 @@
 				55768A2A238E09CA0031F837 /* Sources */,
 				55768A2B238E09CA0031F837 /* Frameworks */,
 				55768A2C238E09CA0031F837 /* Resources */,
+				55768A8F238E23220031F837 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				55768A84238E23220031F837 /* PBXTargetDependency */,
+				55768A87238E23220031F837 /* PBXTargetDependency */,
 			);
 			name = HZSSiriDemo;
 			productName = HZSSiriDemo;
@@ -193,6 +300,40 @@
 			productReference = 55768A54238E09CB0031F837 /* HZSSiriDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		55768A6C238E23210031F837 /* HZSSiriIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55768A8C238E23220031F837 /* Build configuration list for PBXNativeTarget "HZSSiriIntents" */;
+			buildPhases = (
+				55768A69238E23210031F837 /* Sources */,
+				55768A6A238E23210031F837 /* Frameworks */,
+				55768A6B238E23210031F837 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HZSSiriIntents;
+			productName = HZSSiriIntents;
+			productReference = 55768A6D238E23210031F837 /* HZSSiriIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		55768A76238E23220031F837 /* HZSSiriIntentsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55768A89238E23220031F837 /* Build configuration list for PBXNativeTarget "HZSSiriIntentsUI" */;
+			buildPhases = (
+				55768A73238E23220031F837 /* Sources */,
+				55768A74238E23220031F837 /* Frameworks */,
+				55768A75238E23220031F837 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HZSSiriIntentsUI;
+			productName = HZSSiriIntentsUI;
+			productReference = 55768A77238E23220031F837 /* HZSSiriIntentsUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -213,6 +354,12 @@
 						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = 55768A2D238E09CA0031F837;
 					};
+					55768A6C238E23210031F837 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					55768A76238E23220031F837 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 55768A29238E09CA0031F837 /* Build configuration list for PBXProject "HZSSiriDemo" */;
@@ -231,6 +378,8 @@
 				55768A2D238E09CA0031F837 /* HZSSiriDemo */,
 				55768A48238E09CB0031F837 /* HZSSiriDemoTests */,
 				55768A53238E09CB0031F837 /* HZSSiriDemoUITests */,
+				55768A6C238E23210031F837 /* HZSSiriIntents */,
+				55768A76238E23220031F837 /* HZSSiriIntentsUI */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +409,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55768A6B238E23210031F837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55768A75238E23220031F837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55768A81238E23220031F837 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -267,10 +431,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55768A99238E25470031F837 /* GoHomeHandler.m in Sources */,
+				55768A93238E24E30031F837 /* IntentHandler.m in Sources */,
+				55768A95238E24E30031F837 /* IntentViewController.m in Sources */,
 				55768A39238E09CA0031F837 /* ViewController.m in Sources */,
 				55768A33238E09CA0031F837 /* AppDelegate.m in Sources */,
 				55768A44238E09CB0031F837 /* main.m in Sources */,
-				55768A36238E09CA0031F837 /* SceneDelegate.m in Sources */,
+				55768A68238E12F90031F837 /* Intents.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +457,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55768A69238E23210031F837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55768A9A238E26E80031F837 /* Intents.intentdefinition in Sources */,
+				55768A71238E23210031F837 /* IntentHandler.m in Sources */,
+				55768A98238E253E0031F837 /* GoHomeHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55768A73238E23220031F837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55768A9B238E26ED0031F837 /* Intents.intentdefinition in Sources */,
+				55768A7E238E23220031F837 /* IntentViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -302,6 +488,16 @@
 			isa = PBXTargetDependency;
 			target = 55768A2D238E09CA0031F837 /* HZSSiriDemo */;
 			targetProxy = 55768A55238E09CB0031F837 /* PBXContainerItemProxy */;
+		};
+		55768A84238E23220031F837 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55768A76238E23220031F837 /* HZSSiriIntentsUI */;
+			targetProxy = 55768A83238E23220031F837 /* PBXContainerItemProxy */;
+		};
+		55768A87238E23220031F837 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55768A6C238E23210031F837 /* HZSSiriIntents */;
+			targetProxy = 55768A86238E23220031F837 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -320,6 +516,14 @@
 				55768A40238E09CB0031F837 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		55768A7F238E23220031F837 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55768A80238E23220031F837 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -439,13 +643,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HZSSiriDemo/HZSSiriDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDVUMZD778;
 				INFOPLIST_FILE = HZSSiriDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = comHSiriDemo.HZSSiriDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZHKj.youshui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,13 +662,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HZSSiriDemo/HZSSiriDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDVUMZD778;
 				INFOPLIST_FILE = HZSSiriDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = comHSiriDemo.HZSSiriDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZHKj.youshui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -539,6 +749,80 @@
 			};
 			name = Release;
 		};
+		55768A8A238E23220031F837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDVUMZD778;
+				INFOPLIST_FILE = HZSSiriIntentsUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZHKj.youshui.intentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55768A8B238E23220031F837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDVUMZD778;
+				INFOPLIST_FILE = HZSSiriIntentsUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZHKj.youshui.intentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		55768A8D238E23220031F837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDVUMZD778;
+				INFOPLIST_FILE = HZSSiriIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZHKj.youshui.intents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55768A8E238E23220031F837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDVUMZD778;
+				INFOPLIST_FILE = HZSSiriIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZHKj.youshui.intents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -574,6 +858,24 @@
 			buildConfigurations = (
 				55768A64238E09CB0031F837 /* Debug */,
 				55768A65238E09CB0031F837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55768A89238E23220031F837 /* Build configuration list for PBXNativeTarget "HZSSiriIntentsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55768A8A238E23220031F837 /* Debug */,
+				55768A8B238E23220031F837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55768A8C238E23220031F837 /* Build configuration list for PBXNativeTarget "HZSSiriIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55768A8D238E23220031F837 /* Debug */,
+				55768A8E238E23220031F837 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
